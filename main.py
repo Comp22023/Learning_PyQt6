@@ -14,6 +14,12 @@ class MainWindow(QMainWindow):
         self.setFixedSize(QSize(400, 300))
 
         # Устанавливаем центральный виджет Window.
+        button.setCheckable(True)
+        button.clicked.connect(self.butfunc)
+        self.setCentralWidget(button)
+
+    def butfunc(self):
+        button = QPushButton('Опа! Вы попали в ловушку джокера...')
         self.setCentralWidget(button)
 
 #window = QPushButton("Push Me") #Кнопка

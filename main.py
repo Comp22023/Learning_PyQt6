@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(button)
 
     def butfunc(self):
+        self.setWindowTitle("Вы были пойманы... Пока-капа...")
         button = QPushButton('Опа! Вы попали в ловушку джокера...')
         self.setCentralWidget(button)
 

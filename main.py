@@ -8,7 +8,6 @@ app = QApplication(sys.argv)
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        window = QWidget()
         self.setWindowTitle('Мое приложение')
         self.resize(500, 500)  # Размеры окна
         button = QPushButton('Кнопка')
@@ -17,7 +16,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(button)  # Устанавливаем центральный виджет Window.
         button.setFixedSize(100, 60)
         button.move(100, 100)
-        layout = QGridLayout
 
     def butfunc(self):
         self.setWindowTitle("Вы были пойманы... Пока-капа...")
